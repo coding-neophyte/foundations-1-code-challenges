@@ -1,11 +1,11 @@
 // IMPORT MODULES under test here:
-import { 
+import {
     makeArrayOfNames,
     makeReversedArrayOfTypes,
     makeSpanishLanguageArray,
 } from '../for-each.js';
 
-const { test, skip } = QUnit;
+const { test } = QUnit;
 
 test('should make an array of names', (expect) => {
     const pets = [
@@ -21,8 +21,8 @@ test('should make an array of names', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['coco', 'jumper'];
-    
-    //Act 
+
+    //Act
     // Call the function you're testing and set the result to a const
     const actual = makeArrayOfNames(pets);
 
@@ -31,7 +31,7 @@ test('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     const pets = [
         {
             type: 'cat',
@@ -45,8 +45,8 @@ skip('should make a reverse array of type', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['frog', 'cat'];
-    
-    //Act 
+
+    //Act
     // Call the function you're testing and set the result to a const
     const actual = makeReversedArrayOfTypes(pets);
 
@@ -55,7 +55,7 @@ skip('should make a reverse array of type', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
+test('should make a spanish array of pet objects', (expect) => {
     const pets = [
         {
             type: 'cat',
@@ -78,8 +78,8 @@ skip('should make a spanish array of pet objects', (expect) => {
             tipo: 'frog',
         }
     ];
-    
-    //Act 
+
+    //Act
     // Call the function you're testing and set the result to a const
     const actual = makeSpanishLanguageArray(pets);
 
@@ -87,4 +87,3 @@ skip('should make a spanish array of pet objects', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });
-

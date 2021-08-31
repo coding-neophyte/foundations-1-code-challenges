@@ -1,34 +1,34 @@
 // solve these problems using any method you like!
 
-/* 
+/*
 
 Input:
 [
-    { 
+    {
         id: 'apple',
         price: 3,
         quantity: 2,
         category: 'fruit'
     },
-    { 
+    {
         id: 'banana',
         price: 1,
         quantity: 3,
         category: 'fruit'
     },
-    { 
+    {
         id: 'dog food',
         price: 5,
         quantity: 1,
         category: 'other'
     },
-    { 
+    {
         id: 'milk',
         price: 2,
         quantity: 1,
         category: 'dairy'
     },
-        { 
+        {
         id: 'cheese',
         price: 4,
         quantity: 4,
@@ -39,7 +39,7 @@ Input:
 */
 
 /*
-Output: 
+Output:
 {
     apple: 3,
     banana: 1,
@@ -50,37 +50,37 @@ Output:
 */
 
 export function organizePricesByKey(arr) {
-    return {};
+
 }
 
 /*
-Output: 
+Output:
 {
-    apple: { 
+    apple: {
         id: 'apple',
         price: 3,
         quantity: 2,
         category: 'fruit'
     },
-    banana: { 
+    banana: {
         id: 'banana',
         price: 1,
         quantity: 3,
         category: 'fruit'
     },
-    'dog food': { 
+    'dog food': {
         id: 'dog food',
         price: 5,
         quantity: 1,
         category: 'other'
     },
-    milk: { 
+    milk: {
         id: 'milk',
         price: 2,
         quantity: 1,
         category: 'dairy'
     },
-    cheese:    { 
+    cheese:    {
         id: 'cheese',
         price: 4,
         quantity: 4,
@@ -95,7 +95,7 @@ export function makeAHashMap(arr) {
 
 
 /*
-Output: 
+Output:
 {
     fruit: 2,
     other: 1,

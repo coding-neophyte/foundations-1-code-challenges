@@ -1,7 +1,7 @@
 // user Object.values and Object.key to solve these problems!
 
 /*
-Input: 
+Input:
 {
     wheels: 8,
     type: 'truck',
@@ -24,7 +24,8 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    const weirdString = Object.keys(someObject);
+    return weirdString;
 }
 
 
@@ -38,12 +39,17 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    let screamKeys = {};
+    const keys = Object.keys(someObject);
+    keys.forEach((a) => {
+        return screamKeys[a.toUpperCase()] = someObject[a];
+    });
+    return screamKeys;
 }
 
 /*
 Output:
-[ 
+[
     ['wheels', 8],
     ['type', 'truck'],
     ['goes', 'vroom'],
@@ -51,5 +57,6 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
+    const tuple = Object.entries(someObject);
+    return tuple;
 }
